@@ -1,0 +1,19 @@
+\\caminho para linkar o heroku com o postgres
+postgres://
+\\user
+algiiiygwsnpem
+
+\\password
+c6df646f4cbedd26bd7228ab5c15a6b80f225001663a71339df9275d69d67f44
+
+\\servidor
+ec2-52-204-20-42.compute-1.amazonaws.com
+
+\\porta
+5432
+
+\\nome da base de dados
+dcqgrd5eafo68c
+
+\\ COrs é um mecanismo de proteção que o servidor tem, ela não roda se vc tentar acessar por outro domínio, por isso é importante liberar o Cors
+
