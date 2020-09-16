@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import './App.css';
 import Header from './components/Header';
 import Records from './Pages/Records';
+import Charts from './Pages/Charts';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/records" component={Records} />
+        <Route path="/charts" component={Charts} />
       </Switch>
     </div>
   );
