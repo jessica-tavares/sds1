@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './styles.css';
-import { data } from './types';
+import { dataRecord } from './types';
 import { formatDate } from './helpers';
 import Pagination from './Pagination';
 import Filters from '../../components/Filters';
@@ -9,7 +9,7 @@ import Filters from '../../components/Filters';
 const BASE_URL = 'https://sds1-jessica.herokuapp.com';
 
 function Records() {
-  const [data, setData] = useState<data>();
+  const [data, setData] = useState<dataRecord>();
   const [activePage, setActivePage] = useState(0);
 
   useEffect(() => {

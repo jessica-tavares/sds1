@@ -1,4 +1,4 @@
-export type data = {
+export type dataRecord = {
   content: RecordItem[];
   totalPages: number;
 }
