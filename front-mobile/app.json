@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "front-mobile",
-    "slug": "front-mobile",
+    "name": "Big_Game_Survey",
+    "slug": "big_game_survey",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,6 +21,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "App desenvolvido na seman do Dev superior",
+    "githubUrl": "https://github.com/jessica-tavares/sds1/tree/master/front-mobile"
   }
 }
