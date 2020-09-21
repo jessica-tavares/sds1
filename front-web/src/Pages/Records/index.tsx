@@ -5,18 +5,27 @@ import { dataRecord } from './types';
 import { formatDate } from './helpers';
 import Pagination from './Pagination';
 import Filters from '../../components/Filters';
+import Loading from '../../components/Loading';
 
 const BASE_URL = 'https://sds1-jessica.herokuapp.com';
 
 function Records() {
   const [data, setData] = useState<dataRecord>();
   const [activePage, setActivePage] = useState(0);
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     axios.get(`${BASE_URL}/records?linesPerPage=12&page=${activePage}`)
     .then((response) => setData(response.data))
+    setIsLoading(false)
   }, [activePage])
 
+  if (isLoading) return (
+    <div>
+      <Loading />
+    </div>
+  )
+  else {
   return (
     <div className="page-container">
       <Filters link="/charts" linkText="VER GRÁFICO" />
@@ -50,7 +59,7 @@ function Records() {
         goToPage={(index: number) => setActivePage(index)}
       />
     </div>
-  )
+  )}
 }
 
 export default Records;
